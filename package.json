@@ -1,0 +1,28 @@
+{
+  "name": "chat-example",
+  "version": "0.0.0",
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "body-parser": "^1.17.2",
+    "crypto": "0.0.3",
+    "elasticsearch": "^13.2.0",
+    "email-existence": "^0.1.5",
+    "express": "^3.21.2",
+    "express-session": "^1.15.3",
+    "formidable": "^1.1.1",
+    "gps": "^0.3.0",
+    "hbs": "^4.0.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.2.29",
+    "node-where": "^1.1.0",
+    "sendmail": "^1.1.1",
+    "socket.io": "^0.9.19"
+  },
+  "devDependencies": {
+    "gulp-nodemon": "^2.2.1"
+  }
+}

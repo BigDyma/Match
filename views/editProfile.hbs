@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Register</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+		<style>
+			image:hover { 
+    			background-color: yellow;
+			}
+					
+		</style>
+	</head>
+	<body>
+		<form method='post' action='/edited'>
+			{{#ifCond check "==" false }}
+			<select name="Gender">
+			  <option value="Femeie">Femeie</option>
+			  <option value="Barbat">Barbat</option>
+			</select>
+			</br>
+			{{/ifCond}}
+			<select name="preferences">
+			  <option value="HeteroSexual">HeteroSexual</option>
+			  <option value="Bisexual">Bisexual</option>
+			  <option value="Homosexual">Homosexual</option>
+			</select> 
+			<br>
+			<input type="text" name="biography" placeholder="tell something about u" size="40" padding-bottom="40px" value="{{biography}}"><br>
+			<br>
+			<input type="text" name="tagg" placeholder="what do u love" size="40" padding-right="100px" value="{{#each myObj}}{{this}}, {{/each}}"><br>
+			<div>
+			{{#each photos}}<img id="image" onclick="set_effect({{@index}})" src="{{this}}" width="200px" height="200px" value="{{@index}}" alt="{{this}}">{{/each}}
+			</div>
+			<input type="submit" name="edit" value="Submit">
+		</form>
+		  <form action="/fileupload" method="post" enctype="multipart/form-data">
+		  	<input type="file" name="filetoupload"><br>
+			<input type="submit">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+str = "";
+					console.log("o ajuns");
+					if (user['email'] === req.body['email'])
+					{
+							pass += ' email ';
+							if (user["username"] !== req.body["username"])
+							{
+									db.collection("users").findOne({username: req.body.username}, function(err, doc) {
+										if (err) throw err;
+										if (doc)
+											login += ' and login';
+									});
+							}
+							else
+								login += ' and login ';
+					}
+					else if (user['username'] === req.body.username)
+					{
+						login += ' login ';
+						if (user["email"] !== req.body["email"])
+						{
+							db.collection("users").findOne({email: req.body.email}, function(err, docx) {
+							if (err) throw err;
+							console.log(docx.email)
+							if (docx.email != null)
+						 		pass += ' and email';
+						 });
+					  }
+					  else
+						login += ' and email';
+					}
+					res.send(login + pass + ' is in use');
+	

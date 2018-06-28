@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Your Profile</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+	</head>
+	<body>
+		<div>
+	your photo:	{{#each photos}} <img src="{{this}}" width="200px" height="200px" value="{{@index}}" alt="{{this}}"> {{/each}}
+		</div>
+	Your name:	<h3>{{numele}}</h3>		
+	Your Last name:	<h3>{{familia}}</h3>	
+	Your Email:	<h3>{{email}}</h3>	
+	Your Username:	<h3>{{username}}</h3>	
+	Your gender	<h3>{{gender}}</h3>	
+	Preferences:	<h3>{{preferences}}</h3>
+	Biography	<h3>{{biography}}</h3>
+	your fame rating:
+	{{fame}}
+	</br>
+	Your tags:
+		{{#each myObj}}
+			<label>{{this}}</label>
+		{{/each}}
+		<a href="/editProfile"><h1>Want to edit your profile ?</h1> </a>
+	</body>
+</html>

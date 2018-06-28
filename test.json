@@ -1,0 +1,38 @@
+/*{
+	"numele": "nume",
+	"familia": "familia",
+	"email": "email",
+	"username": "user",
+	"password": "pass",
+	"location": "gps",
+	"notifications": {
+		"id1": {
+			time: ""
+			value: ""
+			visible: 
+		}
+		"id2": {
+			
+		}
+	}
+	"personal": {
+		"gender": "M",
+		"sexual Preferences": "H",
+		"biography": "string",
+		"userInterests": {
+			"#hash1": "#hash1",
+			"#hash2": "#hash2",
+		}
+		"photos": {
+			"photo1": "",
+			"photo2": 11;
+			"profilePic": this."photo1";
+		}
+	}
+}
+
+hashtag = "#hewni"
+interests[hashtag] = hashtag;
+JSON.personal.UserInterests[hashtag] = 1;
+*/
+
